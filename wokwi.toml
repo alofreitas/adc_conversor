@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = 'build/adc_conversor.uf2'
+elf = 'build/adc_onversor.elf'
