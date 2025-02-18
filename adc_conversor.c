@@ -133,7 +133,7 @@ int main(){
         }
         
         eixo_x = (adc_x * (WIDTH - 8)) / 4095; // Calcula a posição do cursor no eixo X
-        eixo_y = (adc_y * (HEIGHT - 8)) / 4095; // Calcula a posição do cursor no eixo Y
+        eixo_y = HEIGHT - 8 - (adc_y * (HEIGHT - 8)) / 4095; // Calcula a posição do cursor no eixo Y
     
         ssd1306_fill(&ssd, false);
 
